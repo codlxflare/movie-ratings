@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Лучшие фильмы: Рейтинг</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Шапка сайта: hero-блок (на весь экран) -->
+  <header class="hero">
+    <!-- Полупрозрачный градиент поверх фоновой картинки -->
+    <div class="hero-overlay"></div>
+
+    <!-- Навигация -->
+    <nav class="main-nav">
+      <ul class="nav-menu">
+        <li><a href="#about">О рейтинге</a></li>
+        <li><a href="#top-movies">ТОП Фильмы</a></li>
+        <li><a href="#more-info">Подробнее</a></li>
+      </ul>
+    </nav>
+
+    <!-- Контент hero -->
+    <div class="hero-content">
+      <h1 class="hero-title">Лучшее кино</h1>
+      <p class="hero-subtitle">Время открыть шедевры экрана</p>
+      <a href="#about" class="scroll-down">▼</a>
+    </div>
+
+    <!-- Волнистая «маска» внизу hero -->
+    <div class="wave-divider"></div>
+  </header>
+
+  <!-- Основной контент сайта -->
+  <main>
+    <!-- Раздел: описание рейтинга -->
+    <section id="about" class="intro fade-in">
+      <h2>Почему эти фильмы достойны внимания?</h2>
+      <article>
+        <p>
+          Мы тщательно отобрали картины, которые завоевали сердца миллионов 
+          зрителей и заслужили высокие оценки критиков. В этих лентах сочетаются 
+          уникальный сюжет, выдающаяся актёрская игра и сильнейшая эмоциональная подача.
+        </p>
+      </article>
+    </section>
+
+    <!-- Раздел: Список фильмов с рейтингом -->
+    <section id="top-movies" class="movies fade-in">
+      <h2>Топ-5 фильмов</h2>
+      <ul>
+        <!-- Фильм 1 -->
+        <li class="movie-item">
+          <img src="images/inception.jpg" alt="Inception Poster" />
+          <div class="movie-info">
+            <h3>Inception</h3>
+            <p class="stars">★★★★★ <span>9.0</span></p>
+            <button class="details-button">Показать детали</button>
+            <p class="details hidden">
+              Фантастический триллер о проникновении в сны, снятый Кристофером Ноланом.
+              Умело балансирует между интеллектуальным вызовом и увлекательным экшеном.
+            </p>
+          </div>
+        </li>
+
+        <!-- Фильм 2 -->
+        <li class="movie-item">
+          <img src="images/interstellar.jpg" alt="Interstellar Poster" />
+          <div class="movie-info">
+            <h3>Interstellar</h3>
+            <p class="stars">★★★★☆ <span>8.6</span></p>
+            <button class="details-button">Показать детали</button>
+            <p class="details hidden">
+              Великая космическая эпопея о выживании человечества и мощи 
+              человеческих чувств. Визуальные эффекты и музыкальное сопровождение 
+              завораживают.
+            </p>
+          </div>
+        </li>
+
+        <!-- Фильм 3 -->
+        <li class="movie-item">
+          <img src="images/dark_knight.jpg" alt="The Dark Knight Poster" />
+          <div class="movie-info">
+            <h3>The Dark Knight</h3>
+            <p class="stars">★★★★★ <span>9.0</span></p>
+            <button class="details-button">Показать детали</button>
+            <p class="details hidden">
+              Захватывающая история о Бэтмене и Джокере, 
+              поднявшая планку качества супергеройских фильмов на новую высоту.
+            </p>
+          </div>
+        </li>
+
+        <!-- Фильм 4 -->
+        <li class="movie-item">
+          <img src="images/matrix.jpg" alt="The Matrix Poster" />
+          <div class="movie-info">
+            <h3>The Matrix</h3>
+            <p class="stars">★★★★☆ <span>8.7</span></p>
+            <button class="details-button">Показать детали</button>
+            <p class="details hidden">
+              Революционная лента, предложившая новый взгляд на реальность и свободу воли.
+              Икона киберпанка и научной фантастики.
+            </p>
+          </div>
+        </li>
+
+        <!-- Фильм 5 -->
+        <li class="movie-item">
+          <img src="images/shawshank.jpg" alt="The Shawshank Redemption Poster" />
+          <div class="movie-info">
+            <h3>The Shawshank Redemption</h3>
+            <p class="stars">★★★★★ <span>9.3</span></p>
+            <button class="details-button">Показать детали</button>
+            <p class="details hidden">
+              Один из самых вдохновляющих фильмов, 
+              демонстрирующий силу надежды и настоящей дружбы.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Дополнительная ссылка на внешний ресурс -->
+    <section id="more-info" class="more-info fade-in">
+      <h2>Узнайте ещё больше</h2>
+      <p>
+        Хотите расширить список для вечернего киносеанса? 
+        Добро пожаловать на
+        <a href="https://www.imdb.com/" target="_blank">IMDB</a> — 
+        один из самых авторитетных источников рейтингов и информации о кино.
+      </p>
+    </section>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer>
+    <p>© 2025 Movie Ratings. Все права защищены.</p>
+  </footer>
+
+  <!-- Подключаем JS -->
+  <script src="script.js"></script>
+</body>
+</html>
